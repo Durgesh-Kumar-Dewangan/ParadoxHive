@@ -1,9 +1,6 @@
 {
   "cleanUrls": true,
-  "rewrites": [
-    { "source": "/", "destination": "/paradoxhive-render/site/index.html" },
-    { "source": "/:path*", "destination": "/paradoxhive-render/site/:path*" }
-  ],
+  "outputDirectory": "paradoxhive-render/site",
   "headers": [
     {
       "source": "/(.*)",
