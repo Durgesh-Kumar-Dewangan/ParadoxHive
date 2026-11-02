@@ -1,0 +1,9 @@
+{
+  "name": "paradoxhive",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 3000 --directory paradoxhive-render/site",
+    "start": "python3 -m http.server 3000 --directory paradoxhive-render/site"
+  }
+}
