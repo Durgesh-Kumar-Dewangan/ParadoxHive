@@ -2,7 +2,10 @@
 
 The website is plain static files in `site/` (no build step).
 
-## Option A: Blueprint (uses render.yaml)
+## Option A: Vercel (recommended)
+The repository includes a root `vercel.json` that serves the existing `paradoxhive-render/site/` files without changing the frontend design. Import the repository into Vercel and deploy with the default settings.
+
+## Option B: Blueprint (uses render.yaml)
 1. Put this folder in a GitHub repo (`git init`, commit, push). Old design files (`Main.dc.html`, `support.js`, `vendor/`) can stay; only `site/` is published.
 2. In Render: New > Blueprint > pick the repo > Apply.
 
