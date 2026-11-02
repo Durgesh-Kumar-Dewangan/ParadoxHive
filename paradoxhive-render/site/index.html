@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ParadoxHive</title>
+<meta name="description" content="ParadoxHive teaches any syllabus in a live 3D classroom, answers by voice, and changes its method when a learner looks lost. Built on ACE, our own 3D engine.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23000'/%3E%3Cpath d='M16 5l9 5v12l-9 5-9-5V10z' fill='none' stroke='%23f5a91c' stroke-width='2.4'/%3E%3C/svg%3E">
+<meta property="og:title" content="ParadoxHive: the 3D teacher that notices when you're lost">
+<meta property="og:description" content="Turn any syllabus into a live 3D classroom that adapts to the learner. Built on ACE, our own 3D engine.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--BODY-->
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="logo" href="#top" aria-label="ParadoxHive home"><img src="assets/fdd1e155b43b78075768c99b4bd80a08.png" alt="ParadoxHive"></a>
+    <nav class="nl" id="nl" aria-label="Primary"><a href="#problem">Problem</a><a href="#how">Solution</a><a href="#story">How it works</a><a href="#engine">Engine</a><a href="#customers">Customers</a><a href="#company">Company</a></nav>
+    <a class="txt" href="#demo">Watch the demo</a>
+    <a class="pillbtn" href="#contact">Contact us</a>
+    <button class="menu" id="menu" aria-label="Menu" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 5h14M2 9h14M2 13h14"/></svg></button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <canvas id="dots" aria-hidden="true"></canvas>
+  <div class="hero-in">
+    <div class="hero-l">
+      <h1 class="rv">A 3D teacher that notices when you're <em>lost.</em></h1>
+      <p class="sub rv" style="--d:.1s">ParadoxHive teaches a course from its syllabus in a live 3D classroom, answers by voice, and watches the learner's reaction. When they look lost, it re-explains the idea a different way.</p>
+      <div class="built rv" style="--d:.2s"><i></i> Built on ACE, our own 3D engine</div>
+    </div>
+    <form class="quote rv" style="--d:.2s" id="quote">
+      <div class="qtabs" role="group" aria-label="Audience"><span class="thumb" id="thumb"></span>
+        <button type="button" aria-pressed="true" data-a="0">Institution</button><button type="button" aria-pressed="false" data-a="1">Learner</button></div>
+      <div class="qbody">
+        <label for="topic">Preview a class from your syllabus</label>
+        <div class="qrow"><input id="topic" placeholder="Course or program name" autocomplete="off"><button type="submit" id="qgo">Preview</button></div>
+        <p class="qnote" id="qnote">For schools, universities and training teams.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<main class="sheet">
+  <!-- intro -->
+  <div class="w" id="intro">
+    <div class="intro rv">
+      <h2>Videos can't tell if you understood.<br>Our teacher <span class="blue">can.</span></h2>
+      <p class="l">ParadoxHive teaches a course live in 3D, watches how the learner reacts, and changes its method when they look lost.</p>
+      <div class="seg" id="seg" role="group" aria-label="About ParadoxHive"><button aria-pressed="true" data-k="0">What we do</button><button aria-pressed="false" data-k="1">How ACE works</button><button aria-pressed="false" data-k="2">Who it is for</button></div>
+      <div class="segtxt" id="segtxt"></div>
+    </div>
+  </div>
+
+  <!-- problem -->
+  <div class="w sp" id="problem">
+    <div class="eyb rv"><i></i>The Problem</div>
+    <h2 class="rv" style="max-width:860px">Learning software can't see you, so it can't tell when you're <span class="blue">lost.</span></h2>
+    <p class="lead rv" style="--d:.06s">Videos and chat tutors talk at the learner. Nothing reads the face, nothing asks the right question at the right moment, and the final grade only records what was memorised.</p>
+    <div class="aud">
+      <div class="card rv"><small class="kick">No real interaction</small><h3>The learner can't fully engage with the machine.</h3><p>A recorded video can't answer back. A chat box can't show you how a system works. Learning stays one-way.</p></div>
+      <div class="card rv" style="--d:.08s"><small class="kick">No read on weakness</small><h3>The machine can't track where you struggle.</h3><p>It doesn't see your facial and emotional expression, so it never stops to ask whether you understood, and weak spots stay hidden.</p></div>
+      <div class="card rv" style="--d:.16s"><small class="kick">Marks miss the learner</small><h3>Exams measure memory, not curiosity.</h3><p>A mark can't show how someone asks questions, attacks a problem or grows. Employers hire on that same thin signal.</p></div>
+    </div>
+    <div class="darkcard rv"><div><h3>Live, interactive 3D worlds exist, but they are heavy and costly to run.</h3><p>ParadoxHive brings that same feeling of a teacher in the room to everyday learners, at a far lower price, and it listens to the learner while it teaches.</p></div></div>
+  </div>
+
+  <!-- demo -->
+  <div class="w sp" id="demo">
+    <h2 class="rv">See it teach.</h2>
+    <p class="lead rv" style="--d:.06s;margin-bottom:36px">Pick a learner expression and watch the teacher change its method. Sample session.</p>
+    <div class="win rv" style="--d:.1s">
+      <div class="wbar"><span class="lights"><i></i><i></i><i></i></span><b>Live session</b><span>Physics 11 · Unit 3: Forces on inclined planes</span><span class="live">Sample</span></div>
+      <div class="wbody">
+        <div class="ws"><div class="wl">Lesson plan</div>
+          <ul class="plan"><li class="done">Forces and free-body diagrams</li><li class="done">Weight and the normal force</li><li class="cur">Resolving forces on a slope</li><li>Friction on an incline</li><li>Unit check</li></ul></div>
+        <div class="wm">
+          <img src="assets/8ba287bdf843b2c8936ffd44a3a97139.jpg" alt="A teacher at a large 3D physics board in a sunset terrace classroom">
+          <div class="cam"><div class="scan"></div><svg viewBox="0 0 128 96" aria-hidden="true"><ellipse cx="64" cy="46" rx="22" ry="29" fill="none" stroke="#7f9cff" stroke-width="1.4"/><g fill="#7f9cff"><circle id="eyeL" cx="55" cy="40" r="2"/><circle id="eyeR" cx="73" cy="40" r="2"/></g><path id="mouth" d="M54 62 Q59 58 64 62 T74 62" fill="none" stroke="#7f9cff" stroke-width="1.8" stroke-linecap="round"/></svg><small>Learner · on device</small></div>
+          <div class="tutor"><small>Tutor</small><p id="line"></p></div>
+        </div>
+        <div class="ws"><div class="wl">Learner expression</div><div class="emo" id="emo" role="group" aria-label="Simulate learner expression"></div>
+          <div class="wl mt">Understanding</div><div class="bar"><i id="bar" style="width:32%"></i></div><div class="rd" id="read">Low: confusion detected</div>
+          <div class="wl mt">Next teaching method</div><div class="mth" id="method">Re-explain with an analogy and a 3D demonstration</div>
+          <p class="note">Illustrative interaction, not live data.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- pinned horizontal story -->
+  <section class="hs" id="story">
+    <div class="hs-st">
+      <div class="w hs-head"><h2 class="rv">Traditional learning, <span style="color:#9aa0a8">done the novel way.</span></h2><p class="lead rv" style="--d:.06s">From syllabus to a taught class, every topic moves through the same three steps.</p></div>
+      <div class="hs-track" id="track">
+        <article class="hc on"><img src="assets/8ba287bdf843b2c8936ffd44a3a97139.jpg" alt="" style="object-position:20% 40%">
+          <div class="t"><h3>Syllabus in</h3><p>Drop in a PDF, slides or an outline. ParadoxHive finds the units and the order to teach them.</p></div>
+          <div class="u"><span class="chipx">UPLOADED</span><div class="big">Physics_11_syllabus.pdf</div><div class="mini">5 units · 23 topics found</div><div class="prog"><i></i></div><div class="ok">Ready to build the first class</div></div></article>
+        <article class="hc"><img src="assets/8ba287bdf843b2c8936ffd44a3a97139.jpg" alt="" style="object-position:80% 30%">
+          <div class="t"><h3>Class built</h3><p>Each topic becomes a 3D scene with an experiment, a script for the teacher and a quick check.</p></div>
+          <div class="u"><div class="row"><span>Forces and free-body diagrams</span><span class="rb">READY</span></div><div class="row"><span>Resolving forces on a slope</span><span class="rb">READY</span></div><div class="row"><span>Friction on an incline</span><span class="rb g">BUILDING</span></div></div></article>
+        <article class="hc"><img src="assets/8ba287bdf843b2c8936ffd44a3a97139.jpg" alt="" style="object-position:60% 70%">
+          <div class="t"><h3>Taught and adapted</h3><p>The teacher explains live. If the learner looks confused, it switches method and checks again.</p></div>
+          <div class="u" style="text-align:center"><span class="chipx">CONCEPT LANDED</span><div class="big" style="font-size:34px">3 of 4 checks</div><div class="mini">Switched from formula to analogy</div><div class="prog"><i></i></div><div class="ok">Moving on to friction</div></div></article>
+      </div>
+      <div class="hs-dots" id="hsd"><i class="on"></i><i></i><i></i></div>
+    </div>
+  </section>
+
+  <!-- solution (learner) -->
+  <div class="w" id="how" style="padding-top:30px">
+    <div class="eyb rv"><i></i>The Solution</div>
+    <h2 class="rv" style="max-width:800px">One syllabus in. A live, interactive 3D classroom out.</h2>
+    <p class="lead rv" style="--d:.06s;margin-bottom:26px">For learners (B2C): bring your own syllabus and learn with a teacher that sees you, adapts to you and keeps your plan on track.</p>
+    <a class="btn-dark rv" style="--d:.1s" href="#contact">Book a demo</a>
+    <div class="bento">
+      <div class="bc px" data-s=".05" style="margin-top:70px">
+        <div class="card rv"><h3>Syllabus becomes a 3D classroom</h3><p>Upload your outline or notes. Every topic turns into a 3D scene with experiments, a teacher and quick checks.</p></div>
+        <div class="pic rv"><img src="assets/6927385e9cf4a15d8e51077e2d3243b2.jpg" alt="Concept map showing how topics connect"></div>
+        <div class="card rv"><h3>A teacher that sees you</h3><p>Your expression is read on your device. When you look lost, it slows down, asks if you followed, and tries another way.</p></div>
+      </div>
+      <div class="bc px" data-s="-.03">
+        <div class="pic rv"><img src="assets/93ddf024f4e475ff2eb714f472a9c726.jpg" alt="Learner analytics showing progress, understanding and knowledge gaps"></div>
+        <div class="card rv"><h3>Live, and priced for everyone</h3><p>Ask by voice and get an answer in the room, in your own words. The interaction feels like a world model, without the world-model cost.</p></div>
+        <div class="card rv" id="privacy"><h3>Private by design</h3><p>Emotion sensing is opt-in and meant to run on your device. Camera frames are not stored.</p></div>
+      </div>
+      <div class="bc px" data-s=".08" style="margin-top:36px">
+        <div class="card rv"><h3>Learn the latest tech on a live PC screen</h3><p>A virtual explainer drives a real-looking computer screen and shows how each interface works, step by step.</p>
+          <div class="pc" aria-hidden="true"><div class="pc-bar"><i></i><i></i><i></i><span>console.app</span></div><div class="pc-b"><div class="pc-s"><b></b><b></b><b></b><b></b></div><div class="pc-m"><u></u><u></u><u class="s"></u><span class="btn2">Deploy</span><em>Click Deploy to ship</em><s class="pcur"></s></div></div></div></div>
+        <div class="card rv"><h3>A roadmap that heals itself</h3><p>Miss days to a leave and the schedule rebuilds itself, so the backlog is covered without you replanning.</p>
+          <div class="road" id="road" aria-live="polite"><div class="rdays" id="rdays"></div><div class="rnote" id="rnote"></div></div></div>
+        <div class="pic rv"><img src="assets/da47c1c952097b363a505a8d316a290b.jpg" alt="Voice question to the AI teacher with a related exercise"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- scorecard -->
+  <div class="w sp" id="score">
+    <div class="two" style="align-items:center;gap:56px">
+      <div style="flex:1 1 420px;min-width:0">
+        <h2 class="rv">Evaluation by how you learn, <span style="color:#9aa0a8">not by one exam.</span></h2>
+        <p class="lead rv" style="--d:.06s">ParadoxHive scores learning the way a good mentor would: by watching how you ask, try and recover. The result shows curiosity and the ability to scale, which a marks sheet cannot.</p>
+        <div class="badges rv" style="--d:.1s;margin-top:24px"><span>Questions asked</span><span>Problems attempted</span><span>Approach used</span><span>Recovery after confusion</span></div>
+      </div>
+      <div class="sc rv" style="--d:.1s" id="sc">
+        <div class="sc-h"><b>Learner scorecard</b><span>Sample</span></div>
+        <div class="srow"><span>Learning score</span><div class="sb"><i data-v="82"></i></div><em>82</em></div>
+        <div class="srow"><span>Adaptation score</span><div class="sb"><i data-v="74"></i></div><em>74</em></div>
+        <div class="srow"><span>Curiosity</span><div class="sb"><i data-v="91"></i></div><em>91</em></div>
+        <div class="srow"><span>Problem approach</span><div class="sb"><i data-v="68"></i></div><em>68</em></div>
+        <div class="srow"><span>Ability to scale</span><div class="sb"><i data-v="77"></i></div><em>77</em></div>
+        <p class="note" style="margin-top:18px">Illustrative scores, not live data.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- engine -->
+  <div class="eng" id="engine">
+    <p class="eb">AetherCore Engine (ACE)</p>
+    <h2 class="rv">The engine that makes the class feel real.</h2>
+    <p class="lead rv">ACE is the 3D engine behind ParadoxHive: the stage, lights and physics of the classroom. It keeps the teacher, the room and the experiments working together in real time.</p>
+    <div class="pipe" id="pipe"><div class="pline"><i id="pfill"></i></div>
+      <div class="st"><div class="n">01</div><h4>Plan</h4><p>An AI planner reads the syllabus and builds a lesson graph: topics, order and checks.</p></div>
+      <div class="st"><div class="n">02</div><h4>Build</h4><p>Each topic becomes a 3D scene with props, experiments and a script for the teacher.</p></div>
+      <div class="st"><div class="n">03</div><h4>Teach</h4><p>The avatar speaks, gestures and runs the experiment live, and answers by voice.</p></div>
+      <div class="st"><div class="n">04</div><h4>Sense</h4><p>The learner's camera feed is analysed on their device for confusion, boredom or focus.</p></div>
+      <div class="st"><div class="n">05</div><h4>Adapt</h4><p>The planner rewrites the next step: slower, simpler, hands-on or faster. Then the loop repeats.</p></div>
+    </div>
+    <div class="feat">
+      <div><h3>Realistic avatars</h3><p>Face, eyes, lips and hands move naturally while the teacher speaks.</p></div>
+      <div><h3>Realistic environments</h3><p>Labs, workshops and landscapes that look like the real thing.</p></div>
+      <div><h3>Live tutor model</h3><p>An AI that explains, answers follow-ups and plans the next step as the class runs.</p></div>
+      <div><h3>Expression sensing</h3><p>Facial expression tells the teacher when to slow down or move on.</p></div>
+      <div><h3>Physical simulation</h3><p>Experiments follow real physics, so what you see matches what you learn.</p></div>
+      <div><h3>Browser and desktop</h3><p>Runs in a web browser or as a desktop app. A class can start from a link.</p></div>
+    </div>
+  </div>
+
+  <!-- ACE for business -->
+  <div class="w sp" id="biz">
+    <h2 class="rv" style="max-width:820px">ACE for companies: build tutorials, and hire on evidence.</h2>
+    <p class="lead rv" style="--d:.06s">The same engine and the same evaluation serve businesses (B2B) in two ways.</p>
+    <div class="two" style="margin-top:44px">
+      <div class="card rv" style="flex:1 1 440px;padding:36px"><span class="tag">Product tutorials</span><h3 style="font-size:28px;margin:16px 0 10px">Build the tutorial for your own product.</h3><p style="margin-top:0">Large companies use ACE to create interactive tutorials directly from their own content, with a live screen walkthrough of every interface.</p>
+        <ul class="ticks"><li>Use your own docs, screens and workflows</li><li>Customise the teacher, look and depth to your brand</li><li>Pick the plan that fits your scale</li></ul></div>
+      <div class="card rv" style="flex:1 1 440px;padding:36px;--d:.1s"><span class="tag">Evidence-based hiring</span><h3 style="font-size:28px;margin:16px 0 10px">Shortlist by evaluated skill, not by exam score.</h3><p style="margin-top:0">Scorecards come from real sessions: the questions a person asks, the problems they take on and the approach they use.</p>
+        <ul class="ticks"><li>See curiosity, adaptation and ability to scale</li><li>Prioritise candidates by evaluated credentials</li><li>Learners decide who can view their profile</li></ul></div>
+    </div>
+  </div>
+
+  <!-- customers -->
+  <div class="w sp" id="customers">
+    <h2 class="rv" style="max-width:760px">One engine, <span style="color:#9aa0a8">three ways to reach learners.</span></h2>
+    <p class="lead rv" style="--d:.06s">The same ACE-powered teacher serves an institution, an individual or a family. Only the buyer and the packaging change.</p>
+    <div class="aud">
+      <div class="card rv"><span class="tag">B2B</span><h3>Schools, universities and training teams</h3><p style="margin-top:0">Institutions and companies upload their curriculum or product content and ACE builds the classes. Teams see where learners are stuck and who is ready.</p><div class="kv"><div><small>Who</small><span>Institutions, coaching centres, company training teams</span></div><div><small>How we earn</small><span>Licence per seat, or a plan for your scale</span></div><div><small>How we reach them</small><span>Paid pilots with a few institutions, then referrals</span></div></div></div>
+      <div class="card rv" style="--d:.08s"><span class="tag">B2C</span><h3>Individual learners</h3><p style="margin-top:0">Learners bring their own syllabus or notes, join from a browser, and follow a roadmap that reschedules itself after a missed day.</p><div class="kv"><div><small>Who</small><span>Students, exam candidates, adults learning a new skill</span></div><div><small>How we earn</small><span>Monthly subscription, first class free</span></div><div><small>How we reach them</small><span>Web app, word of mouth and short session clips</span></div></div></div>
+      <div class="card rv" style="--d:.16s"><span class="tag">D2C</span><h3>Ready-made courses</h3><p style="margin-top:0">ParadoxHive builds and publishes complete 3D courses on core subjects under its own brand.</p><div class="kv"><div><small>Who</small><span>Parents and learners who want a finished course</span></div><div><small>How we earn</small><span>Course purchase or family plan</span></div><div><small>How we reach them</small><span>Direct channels and content, no institution in between</span></div></div></div>
+    </div>
+  </div>
+
+  <!-- adaptive + privacy -->
+  <div class="w sp" style="padding-top:110px">
+    <div class="two">
+      <div class="card rv" style="flex:3 1 560px;padding:36px"><h3 style="font-size:30px;margin-bottom:18px">When a concept doesn't land, the method changes.</h3>
+        <div class="rowx"><b>Confusion</b><span>Slows down, offers an analogy, then shows the idea as a 3D demonstration.</span></div>
+        <div class="rowx"><b>Drifting attention</b><span>Hands control to the learner with a short interactive challenge.</span></div>
+        <div class="rowx"><b>Understanding</b><span>Confirms with a quick check and moves on without over-explaining.</span></div>
+        <div class="rowx"><b>Sustained focus</b><span>Raises the difficulty with deeper questions and real-world cases.</span></div></div>
+      <div class="ghost rv" style="flex:2 1 360px;--d:.1s"><h3 style="font-size:30px;margin-bottom:14px">Your face stays with you.</h3><p style="color:#4a4f57;margin-bottom:14px">Emotion sensing is opt-in for each session and can be paused at any moment. Camera frames are designed to be processed on the device and not stored.</p><p style="color:#4a4f57">The tutor uses the signal only to decide how to teach. It does not label learners or grade them by their face.</p></div>
+    </div>
+  </div>
+
+  <!-- why -->
+  <div class="w sp" id="why">
+    <h2 class="rv" style="max-width:760px">A focused idea, with a clear path to a company.</h2>
+    <p class="lead rv" style="--d:.06s">The problem, the insight and the plan, stated plainly.</p>
+    <div class="why">
+      <div class="card rv"><small>The problem</small><h3>Learners rarely say when they're lost.</h3><p>Teachers can't watch every face in time, and recorded courses and chat tutors never see confusion, so nobody asks whether you understood.</p></div>
+      <div class="card rv" style="--d:.06s"><small>Our insight</small><h3>The lesson should change while it's being taught.</h3><p>Chat tutors answer but don't see. Talking-avatar videos look human but follow a fixed script. We join teacher, room and learner reaction in one loop.</p></div>
+      <div class="card rv" style="--d:.12s"><small>First customer</small><h3>Coaching centres and tutors, starting with physics.</h3><p>They already have a syllabus and paying students, and one teacher can't read an entire class.</p></div>
+      <div class="card rv"><small>First version</small><h3>One subject, one teacher, one adaptation loop.</h3><p>Physics, five units, in a browser. On confusion the teacher switches to an analogy and a 3D demo, then runs a quick check.</p></div>
+      <div class="card rv" style="--d:.06s"><small>Business model</small><h3>Three channels on one engine.</h3><p>Licence per seat (B2B), subscription (B2C) and ready-made courses (D2C). ACE can later teach other subjects and corporate training.</p></div>
+      <div class="card rv" style="--d:.12s"><small>Risks, named up front</small><h3>We design around what could go wrong.</h3><p>Expression reading is imperfect, so it's a hint confirmed by a quick check. Live 3D costs money per session, so we start narrow and measure. Sensing is opt-in and on-device.</p></div>
+    </div>
+  </div>
+
+  <!-- team -->
+  <div class="w sp" id="company">
+    <h2 class="rv" style="max-width:820px">ParadoxHive builds the engine and the classroom.</h2>
+    <p class="lead rv" style="--d:.06s;max-width:760px">Many AI tutors are a chat box or a talking video. We build the engine, so the teacher, the room, the physics and the learner signal live in one system and improve together.</p>
+    <div class="team">
+      <div class="card founder rv"><div class="av">DD</div><div><h3>Durgesh Kumar Dewangan</h3><div class="role">Founder</div><p style="margin-top:0">Final-year B.Tech (Honours) student in Computer Science &amp; Engineering (Artificial Intelligence), building ParadoxHive's adaptive 3D teaching engine.</p><div class="badges"><span>B.Tech (Honours)</span><span>CSE · AI</span></div><a class="about" href="https://worklabxcddportfolia.vercel.app" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>About me · Portfolio<svg class="ar" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l6-6M6 5h5v5"/></svg></a></div></div>
+      <div class="card goal rv" style="--d:.1s;padding:36px"><h3 style="font-size:26px">What we're building toward</h3><ul><li>A teacher that reacts to the learner, not just the question.</li><li>Classes generated from any syllabus, in minutes rather than months.</li><li>A learner signal that stays private and on-device.</li></ul></div>
+    </div>
+  </div>
+  <!-- faq -->
+  <div class="w sp" id="faq">
+    <h2 class="rv">Questions, answered.</h2>
+    <div class="faq">
+      <details class="rv"><summary>Does ParadoxHive need my camera?</summary><p>No. Emotion sensing is opt-in for each session and can be paused at any moment. Without it, the teacher relies on your questions and quick checks.</p></details>
+      <details class="rv"><summary>Are camera frames stored?</summary><p>No. Frames are designed to be processed on your device and are not stored. The signal is used only to decide how to teach.</p></details>
+      <details class="rv"><summary>How is the score different from marks?</summary><p>It is built from the questions you ask, the problems you attempt, the approach you use and how you recover after confusion. It shows curiosity and ability to scale, not just recall.</p></details>
+      <details class="rv"><summary>What happens if I miss days of learning?</summary><p>Your roadmap rebuilds itself. The backlog is spread across the coming days and the end date stays where possible, so you don't have to replan.</p></details>
+      <details class="rv"><summary>Can my company build tutorials with ACE?</summary><p>Yes. Use your own content and screens to build interactive tutorials with a live screen walkthrough, customised to your brand and your plan. Get in touch and we'll scope it with you.</p></details>
+      <details class="rv"><summary>Who can see my profile when companies hire?</summary><p>You decide. Learners choose who can view their scorecard.</p></details>
+    </div>
+  </div>
+</main>
+
+<section class="cta" id="contact">
+  <div class="cta-b"><canvas id="dots2" aria-hidden="true"></canvas>
+    <div class="cta-in"><h2 class="rv">Bring a syllabus.<br>We'll build the first class.</h2>
+      <div class="mails rv" style="--d:.1s">
+        <div class="mail"><small>Primary</small><a href="mailto:github.durgesh@gmail.com">github.durgesh@gmail.com</a><button type="button" class="cp" data-c="github.durgesh@gmail.com">Copy</button></div>
+        <div class="mail"><small>Secondary</small><a href="mailto:durgeshcsvtu0@gmail.com">durgeshcsvtu0@gmail.com</a><button type="button" class="cp" data-c="durgeshcsvtu0@gmail.com">Copy</button></div>
+      </div>
+      <a class="pillbtn rv" style="--d:.16s" href="mailto:github.durgesh@gmail.com?cc=durgeshcsvtu0@gmail.com">EMAIL US</a></div></div>
+</section>
+
+<footer>
+  <div class="w" style="width:min(1400px,100% - 48px);padding:0 24px">
+    <div class="fg">
+      <div><img src="assets/fdd1e155b43b78075768c99b4bd80a08.png" alt="ParadoxHive"><p>ParadoxHive Inc. Adaptive 3D teaching, powered by AetherCore Engine.</p><p style="margin-top:10px">github.durgesh@gmail.com<br>durgeshcsvtu0@gmail.com</p></div>
+      <div class="fc"><a href="#problem">Problem</a><a href="#how">Solution</a><a href="#engine">Engine</a><a href="#customers">Customers</a></div>
+      <div class="fc"><a href="#company">Company</a><a href="#privacy">Privacy</a><a href="#demo">Demo</a><a href="#contact">Contact</a></div>
+      <div class="fb"><a href="#demo">Watch the demo</a><a class="f" href="#contact">Request a pilot</a></div>
+    </div>
+    <div class="wm-big" aria-hidden="true"><div>ParadoxHive</div></div>
+    <div class="copy"><span>© <span id="yr">2026</span> ParadoxHive Inc. All rights reserved.</span><span>Product panels reflect our design concept and will evolve as ACE is built.</span></div>
+  </div>
+</footer>
+<!--/BODY-->
+<script src="main.js"></script>
+</body>
+</html>
